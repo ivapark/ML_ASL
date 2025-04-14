@@ -10,9 +10,7 @@ This app is an interactive app that translates ASL into the alphabet. Users can 
 
 ### Demo
 
-<video width="600" controls>
-  <source src="assets/ML_ASL_demo.mp4" type="video/mp4">
-</video>
+[Watch ASL Demo Video](https://user-images.githubusercontent.com/12345678/abcdefg-ML_ASL_demo.mp4)
 
 ## Prerequisites
 
