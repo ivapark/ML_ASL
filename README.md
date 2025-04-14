@@ -10,8 +10,9 @@ This app is an interactive app that translates ASL into the alphabet. Users can 
 
 ### Demo
 
-https://github.com/ivapark/ML_ASL/assets/ML_ASL_demo.mp4
-
+<video width="600" controls>
+  <source src="assets/ML_ASL_demo.mp4" type="video/mp4">
+</video>
 
 ## Prerequisites
 
