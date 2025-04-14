@@ -1,0 +1,43 @@
+services:
+  mongodb_new:
+    image: mongo
+    container_name: mongodb_new
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    environment:
+      SECRET_KEY: ${SECRET_KEY}
+      MONGO_INITDB_DATABASE: ${MONGO_DB_NAME}
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+
+  web:
+    build: ./web-app
+    container_name: web-app
+    ports:
+      - "5002:5002" # Web Flask runs on port 5002
+    environment:
+      - FLASK_ENV=development
+    depends_on:
+      - mongodb_new
+    volumes:
+      - ./web-app:/app
+    env_file:
+      - .env
+
+  ml-client:
+    build: ./machine-learning-client
+    container_name: ml-client
+    ports:
+      - "5001:5001" # Expose ML API to localhost:5001
+    depends_on:
+      - mongodb_new
+    volumes:
+      - ./machine-learning-client:/app
+      - ./outside-folder/dataset:/app/dataset
+    env_file:
+      - .env
+    
+volumes:
+  mongo_data:
