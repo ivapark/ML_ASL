@@ -10,7 +10,7 @@ This app is an interactive app that translates ASL into the alphabet. Users can 
 
 ### Demo
 
-[![Watch the demo](assets/demo.svg)](https://user-images.githubusercontent.com/your-demo-link.mp4)
+[![Watch the demo](assets/demo.svg)](https://github.com/ivapark/ML_ASL/issues/1#issue-2994480415)
 
 ## Prerequisites
 
