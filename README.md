@@ -8,6 +8,10 @@ This app is an interactive app that translates ASL into the alphabet. Users can 
 
 <img src="assets/aslchart.svg" width="600"/>
 
+### Demo
+
+https://github.com/ivapark/ML_ASL/assets/ML_ASL_demo.mp4
+
 
 ## Prerequisites
 
