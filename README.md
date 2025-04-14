@@ -6,7 +6,7 @@
 
 This app is an interactive app that translates ASL into the alphabet. Users can sign letters through their web camera, which will be translated into the English alphabet.
 
-<img src="web-app/static/img/aslchart.svg" width="600"/>
+<img src="assets/aslchart.svg" width="600"/>
 
 
 ## Prerequisites
